@@ -1,38 +1,39 @@
-import React , {Component} from "react"
+import React, { Component } from "react"
 import shortid from "shortid"
 
 
-class Form extends Component{
+class Form extends Component {
 
   state = {
-    testo : ""
+    testo: ""
   }
- 
-  handleChange = (event) =>{
+
+  handleChange = (event) => {
     this.setState({
       [event.target.name]: event.target.value
     })
   }
-  
-  handleSubmit = (event) =>{
+
+  handleSubmit = (event) => {
     event.preventDefault()
-    this.props.onSubmit({
-      testo: this.state.testo,
-      completato: false,
-      id: shortid.generate()
-    })
+    if (this.state.testo.trim() !== '')
+      this.props.onSubmit({
+        testo: this.state.testo,
+        completato: false,
+        id: shortid.generate()
+      })
     this.setState({
       testo: ""
     })
   }
 
-  render(testo){
-    return(
-    <form onSubmit={this.handleSubmit}>
-      <input type="text" name="testo" onChange={this.handleChange} placeholder="contenuto da aggiungere" value={this.state.testo}/>
-      <button onClick={this.handleSubmit}>aggiungi</button>
-    </form>
-    
+  render(testo) {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <input type="text" name="testo" onChange={this.handleChange} placeholder="contenuto da aggiungere" value={this.state.testo} />
+        <button onClick={this.handleSubmit}>aggiungi</button>
+      </form>
+
     )
   }
 }
