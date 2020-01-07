@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/lavoroNatale/static/css/main.d1b05096.chunk.css",
+    "main.js": "/lavoroNatale/static/js/main.47ddec78.chunk.js",
+    "main.js.map": "/lavoroNatale/static/js/main.47ddec78.chunk.js.map",
+    "runtime-main.js": "/lavoroNatale/static/js/runtime-main.b07675b2.js",
+    "runtime-main.js.map": "/lavoroNatale/static/js/runtime-main.b07675b2.js.map",
+    "static/js/2.4904d861.chunk.js": "/lavoroNatale/static/js/2.4904d861.chunk.js",
+    "static/js/2.4904d861.chunk.js.map": "/lavoroNatale/static/js/2.4904d861.chunk.js.map",
+    "index.html": "/lavoroNatale/index.html",
+    "precache-manifest.d0eabb94714d3e895bd585d2f249552a.js": "/lavoroNatale/precache-manifest.d0eabb94714d3e895bd585d2f249552a.js",
+    "service-worker.js": "/lavoroNatale/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/lavoroNatale/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4904d861.chunk.js.LICENSE": "/lavoroNatale/static/js/2.4904d861.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b07675b2.js",
+    "static/js/2.4904d861.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.47ddec78.chunk.js"
+  ]
+}
