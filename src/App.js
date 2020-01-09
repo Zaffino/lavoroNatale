@@ -3,13 +3,6 @@ import React, { Component } from 'react';
 import './App.css';
 import List from './list.js';
 
-/*
-la todo list necessita di:
-bottoni -> aggiungi, togli
-div -> dove c'è il todo list 
-textArea -> dove aggiungo elementi al todo list
-*/
-
 class Header extends Component{
   render(){
     return(

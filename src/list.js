@@ -2,12 +2,21 @@ import React, { Component } from "react"
 import Form from './form.js';
 import Todo from './todo.js';
 
+/**
+ * List gestisce la lista di todo
+ */
 class List extends Component {
+    /**
+     * state all'inizio imposta la todoList vuota.
+     * todoCompletati serve a sapere se i bottoni di eliminazione per i todo devono essere attivi o inattivi
+     */
     state = {
         todoList: [],
         todoCompletati: 0
     }
-
+    /**
+     * gestisce l'eliminazione di un solo todo dalla lista
+     */
     handleElimina = (id) => {
         this.setState({
             todoList: this.state.todoList.filter(todo => todo.id !== id),
@@ -15,6 +24,9 @@ class List extends Component {
         })
     }
 
+    /**
+     * gestisce l'eliminazione dei todo completati dalla lista
+     */
     handleEliminaCompletati = () => {
         this.setState({
             todoList: this.state.todoList.filter(todo => !todo.completato),
@@ -22,6 +34,9 @@ class List extends Component {
         })
     }
 
+    /**
+     * gestisce l'eliminazione di tutti i todo dalla lista
+     */
     handleReset = () => {
         this.setState({
             todoList: [],
@@ -29,6 +44,9 @@ class List extends Component {
         })
     }
 
+    /**
+     * gestisce l'aggiunta di un todo alla lista
+     */
     addTodo = (todo) => {
 
         this.state.todoList.push(todo)
@@ -37,6 +55,9 @@ class List extends Component {
         })
     }
 
+    /**
+     * gestisce se un todo è completato o no
+     */
     toggleComplete = (id) => {
         this.setState({
             todoList: this.state.todoList.map(todo => {
